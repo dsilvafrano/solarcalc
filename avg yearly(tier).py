@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 from scipy.optimize import minimize, basinhopping
 import sqlite3
-import logger
+import logging
 import numpy_financial as npf
 import time
 # from shgo import shgo
@@ -88,7 +88,7 @@ def create_connection():
     try:
         conn = sqlite3.connect("db6_updated.sqlite3")
     except ValueError as e:
-        logger.debug(random_no + " " + e)
+        logging.debug(random_no + " " + e)
     return conn
 
 conn = create_connection()

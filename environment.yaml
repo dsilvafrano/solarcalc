@@ -1,0 +1,18 @@
+name: solar-calc
+channels:
+  - conda-forge
+dependencies:
+  - python =3.10 # different from notebook version
+  - pip
+  - conda
+  - mamba
+  - black
+  - notebook
+  - jupytext
+  - requests
+  - scipy
+  - numpy
+  - numpy-financial
+  - pandas
+  - sqlite
+  
